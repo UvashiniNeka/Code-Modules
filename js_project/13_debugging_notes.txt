@@ -1,0 +1,4 @@
+- Use F12 or Ctrl+Shift+I to open Chrome Dev Tools
+- Use Console to log values
+- Set breakpoints in Sources tab
+- Check Network tab for AJAX request issues
