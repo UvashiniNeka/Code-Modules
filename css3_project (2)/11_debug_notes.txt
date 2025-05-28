@@ -1,0 +1,3 @@
+Use Chrome DevTools to simulate devices via Ctrl+Shift+M.
+Inspect elements, change styles live.
+Use Network tab to ensure external CSS loads properly.

@@ -1,0 +1,11 @@
+body {
+    background-color: #ffcccb;
+    background-image: url('fallback.jpg');
+}
+
+.gradient-header {
+    background: linear-gradient(to right, red, yellow);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

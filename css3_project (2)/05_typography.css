@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.styled-text {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 2;
+}

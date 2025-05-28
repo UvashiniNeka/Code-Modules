@@ -1,0 +1,99 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+#mainHeader {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Event card styles */
+.eventCard {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(240, 248, 255, 0.8);
+}
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.description {
+    text-align: justify;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+/* Link styles */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: green; }
+a:active { color: red; }
+
+/* List styles */
+.navMenu {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 10px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Multi-column layout */
+.news {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    margin: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navMenu {
+        display: block;
+    }
+
+    .navMenu li {
+        margin-bottom: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

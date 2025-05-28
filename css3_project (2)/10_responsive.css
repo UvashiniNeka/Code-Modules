@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 30%;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+}
