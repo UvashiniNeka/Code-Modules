@@ -1,0 +1,4 @@
+Use Chrome DevTools:
+- Right-click and choose 'Inspect' to view and tweak styles
+- Open Console tab to view logs or errors
+- Set breakpoints in Sources tab to debug JavaScript

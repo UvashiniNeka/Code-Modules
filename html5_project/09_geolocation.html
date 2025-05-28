@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function findLocation() {
+            navigator.geolocation.getCurrentPosition(
+                pos => {
+                    document.getElementById("coords").innerText =
+                        "Latitude: " + pos.coords.latitude + ", Longitude: " + pos.coords.longitude;
+                },
+                err => {
+                    document.getElementById("coords").innerText = "Error: " + err.message;
+                },
+                { enableHighAccuracy: true, timeout: 5000 }
+            );
+        }
+    </script>
+</head>
+<body>
+    <button onclick="findLocation()">Find Nearby Events</button>
+    <p id="coords"></p>
+</body>
+</html>

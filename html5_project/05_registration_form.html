@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        form {
+            border: 1px solid gray;
+            padding: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="document.getElementById('confirmation').value = 'Thank you for registering!'; return false;">
+        <input type="text" name="name" placeholder="Your Name" required autofocus><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <input type="date" name="date"><br>
+        <select name="eventType">
+            <option>Workshop</option>
+            <option>Seminar</option>
+        </select><br>
+        <textarea name="message" placeholder="Message..."></textarea><br>
+        <input type="submit" value="Register"><br>
+        <output id="confirmation"></output>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function validatePhone(el) {
+            if (!/^\d{10}$/.test(el.value)) alert("Invalid phone number");
+        }
+        function showFee(el) {
+            alert("Selected fee: $" + (el.value === "Seminar" ? "50" : "30"));
+        }
+        function enlargeImage(img) {
+            img.style.width = "300px";
+        }
+        function countChars(el) {
+            document.getElementById("charCount").innerText = el.value.length;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Phone" onblur="validatePhone(this)"><br>
+    <select onchange="showFee(this)">
+        <option value="Workshop">Workshop</option>
+        <option value="Seminar">Seminar</option>
+    </select><br>
+    <button onclick="alert('Submitted!')">Submit</button><br>
+    <img src="event.jpg" ondblclick="enlargeImage(this)" width="150"><br>
+    <textarea onkeyup="countChars(this)"></textarea><br>
+    <span id="charCount">0</span> characters
+</body>
+</html>

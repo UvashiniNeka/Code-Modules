@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function videoReady() {
+            document.getElementById("message").innerText = "Video ready to play";
+        }
+        window.onbeforeunload = function() {
+            return "Are you sure you want to leave?";
+        };
+    </script>
+</head>
+<body>
+    <video controls oncanplay="videoReady()">
+        <source src="promo.mp4" type="video/mp4">
+    </video>
+    <p id="message"></p>
+</body>
+</html>
